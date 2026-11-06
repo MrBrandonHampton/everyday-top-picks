@@ -1,103 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Everyday Top Picks</title>
+  <meta name="description" content="Discover useful everyday products, technology, and home essentials at Everyday Top Picks.">
+  <title>Everyday Top Picks | Great Everyday Finds</title>
+
   <style>
-  
-/* Everyday Top Picks design upgrade */
-body {
-  font-family: Arial, sans-serif;
-  background: #f3f6fa;
-  color: #243247;
-  line-height: 1.6;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-header {
-  background: linear-gradient(135deg, #102a4c, #2563a6);
-  color: white;
-  padding: 65px 20px;
-  text-align: center;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      color: #243247;
+      line-height: 1.6;
+    }
 
-header h1 {
-  font-size: 42px;
-  margin-bottom: 8px;
-}
+    header {
+      background: linear-gradient(135deg, #102a4c, #2563a6);
+      color: white;
+      padding: 65px 20px;
+      text-align: center;
+    }
 
-section {
-  background: white;
-  border-radius: 16px;
-  padding: 30px;
-  margin: 25px 0;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-}
+    header h1 {
+      font-size: 42px;
+      margin: 0 0 10px;
+    }
 
-.button {
-  background: #ff9900;
-  color: #172235;
-  border-radius: 10px;
-  padding: 14px 24px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
 
-.button:hover {
-  background: #e88b00;
-}
+    nav {
+      background: #102a4c;
+      padding: 15px;
+      text-align: center;
+    }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 30px;
-  }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
 
-  section {
-    padding: 20px;
-  }
-}
-  
+    nav a:hover {
+      color: #ffb84d;
+    }
 
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px;
+    }
 
-    body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #222; }
-    header { background: #17365d; color: white; padding: 45px 20px; text-align: center; }
-    main { max-width: 900px; margin: auto; padding: 25px; }
-    section { background: white; padding: 24px; margin: 20px 0; border-radius: 12px; }
-    .button { display: inline-block; background: #ff9900; color: #111; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
-    footer { text-align: center; padding: 25px; color: #555; }
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 25px 0;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #17365d;
+      margin-top: 0;
+    }
+
+    .product-card {
+      border: 1px solid #e1e7ef;
+      border-radius: 12px;
+      padding: 25px;
+      background: #fafcff;
+    }
+
+    .product-label {
+      display: inline-block;
+      background: #e7f0fc;
+      color: #17365d;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ff9900;
+      color: #172235;
+      border-radius: 10px;
+      padding: 14px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+      transition: background 0.2s;
+    }
+
+    .button:hover {
+      background: #e88b00;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: #eef4fb;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .disclosure {
+      font-size: 14px;
+      color: #526173;
+    }
+
+    footer {
+      background: #102a4c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      header {
+        padding: 45px 15px;
+      }
+
+      main {
+        padding: 15px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Everyday Top Picks</h1>
-    <p>Great finds for everyday life!</p>
+    <p>Discover great finds for everyday life!</p>
   </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#featured">Featured Picks</a>
+    <a href="#categories">Categories</a>
+  </nav>
+
   <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>Discover useful products for your home, technology, and everyday needs.</p>
-    </section>
-    <section>
-      <h2>Featured Pick: Wireless Mouse</h2>
-      <p>A simple, convenient accessory for work, school, and home.</p>
+
+    <section id="home">
+      <h2>Welcome to Everyday Top Picks!</h2>
       <p>
-  Check out our featured wireless mouse on Amazon!
-</p>
-<a href="https://link.amazon/B02k1oB96"
-   target="_blank"
-   rel="sponsored noopener noreferrer"
-   class="button">
-  View Product on Amazon
-</a>
+        Looking for useful products to make everyday
+        life a little easier?
+      </p>
+      <p>
+        We share product recommendations for technology,
+        home essentials, and everyday accessories.
+        Explore our featured picks and discover
+        something useful today!
+      </p>
     </section>
-    <section>
-      <h2>Browse Our Categories</h2>
-      <p>Technology | Home Essentials | Everyday Accessories</p>
+
+    <section id="featured">
+      <h2>Our Featured Picks</h2>
+
+      <div class="product-card">
+        <span class="product-label">Technology Pick</span>
+
+        <h3>Wireless Mouse</h3>
+
+        <p>
+          A convenient wireless mouse for working,
+          studying, browsing, and everyday computer use.
+        </p>
+
+        <p>
+          Check out our featured wireless mouse on Amazon!
+        </p>
+
+        <a
+          href="https://link.amazon/B02k1oB96"
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          class="button">
+          View Product on Amazon
+        </a>
+      </div>
     </section>
-    <section>
-      <p><strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</p>
+
+    <section id="categories">
+      <h2>Shop by Category</h2>
+
+      <div class="categories">
+        <div class="category">
+          💻 Technology
+        </div>
+
+        <div class="category">
+          🏠 Home Essentials
+        </div>
+
+        <div class="category">
+          🎒 Everyday Accessories
+        </div>
+      </div>
     </section>
+
+    <section class="disclosure">
+      <p>
+        <strong>Affiliate Disclosure:</strong>
+        As an Amazon Associate I earn from qualifying purchases.
+      </p>
+    </section>
+
   </main>
-  <footer>Everyday Top Picks</footer>
+
+  <footer>
+    <p>Everyday Top Picks</p>
+    <p>Great finds for everyday life!</p>
+  </footer>
+
 </body>
 </html>
