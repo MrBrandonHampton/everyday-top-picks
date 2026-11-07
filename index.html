@@ -158,6 +158,50 @@
         margin: 5px 8px;
       }
     }
+   
+/* Improved wireless mouse product cards */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #d7e4f4;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.product-card h3 {
+  color: #17365d;
+  font-size: 22px;
+  margin: 14px 0;
+}
+
+.product-card p {
+  color: #46566a;
+}
+
+.product-label {
+  display: inline-block;
+  background: #e7f0fc;
+  color: #17365d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    padding: 20px;
+  }
+}
+ 
   </style>
 </head>
 
